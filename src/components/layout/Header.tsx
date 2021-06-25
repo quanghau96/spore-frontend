@@ -3,7 +3,7 @@ import './Header.css';
 
 import React from 'react';
 import Web3 from 'web3';
-import { Link } from 'react-router-dom';
+import {  NavLink, Link } from 'react-router-dom';
 
 const win = window as any
 const connectMetaMask = () => {
@@ -171,10 +171,10 @@ const Header = () => {
     <header className='header'>
       <nav className='navbar navbar-expand-lg py-3'>
         <div className='container-fluid'>
-          <a href='/' className='navbar-brand'>
+          <NavLink to='/' className='navbar-brand'>
             <img src='spore_128.png' className='logo' alt='Spore' />{' '}
             <h1 className='font-weight-bold d-inline'>Spore</h1>
-          </a>
+          </NavLink>
           <button
             type='button'
             data-toggle='collapse'
